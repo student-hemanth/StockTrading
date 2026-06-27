@@ -4,7 +4,7 @@ function Stats() {
     return (
         <div className="container p-3">
             <div className="row align-items-center ">
-                <div className="col-6  p-5">
+                <div className="col-12 col-md-6 p-5">
                     <h1 className='fs-2' >Trust with confidence</h1>
                     <h3 className='fs-4'>Customer-first always</h3>
                     <p className='text-muted'>That's why 1.3+ crore customers trust Zerodha
@@ -20,7 +20,7 @@ function Stats() {
                     <p className='text-muted'>That's why 1.3+ crore customers trust Zerodha
                         with ₹3.5+ lakh crore worth of equity investments</p>
                 </div>
-                <div className="col-6 text-end">
+                <div className="col-12 col-md-6 text-center text-md-end">
                     <img src="ecosystem.png" alt="Ecosystem" style={{ width: "90%" }} />
                     <div className='text-center'>
                         <a href='' className='mx-5' style={{ textDecoration: "none" }}>Explore our product</a>

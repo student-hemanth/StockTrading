@@ -5,12 +5,12 @@ function Footer() {
         <footer style={{ backgroundColor: "rgb(250,250,250)" }}>
             <div className='container border-top mt-5'>
                 <div className='row mt-5'>
-                    <div className='col'>
+                    <div className='col-6 col-md-3 mb-4 mb-md-0'>
                         <img src='/logo.svg' alt='Logo' style={{ width: "50%" }} />
                         <p>&copy; 2010-2024, Not Zerodha Broking Ltd, All rights reserved</p>
                     </div>
 
-                    <div className='col'>
+                    <div className='col-6 col-md-3 mb-4 mb-md-0'>
                         <p>Company</p>
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>About</a><br />
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Press</a><br />
@@ -20,7 +20,7 @@ function Footer() {
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Contact</a><br />
                     </div>
 
-                    <div className='col'>
+                    <div className='col-6 col-md-3 mb-4 mb-md-0'>
                         <p>Support</p>
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Contact</a><br />
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Support</a><br />
@@ -29,7 +29,7 @@ function Footer() {
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Contact</a><br />
                     </div>
 
-                    <div className='col'>
+                    <div className='col-6 col-md-3'>
                         <p>Account</p>
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Contact</a><br />
                         <a href="" style={{ "textDecoration": "none", "color": "rgb(102, 102, 102)" }}>Support</a><br />

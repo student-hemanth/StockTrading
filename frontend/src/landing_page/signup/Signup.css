@@ -41,3 +41,15 @@
 .signup-card a:hover {
   color: #2a6cb8;
 }
+
+@media (max-width: 576px) {
+  .signup-page {
+    padding: 30px 0;
+  }
+  .signup-card {
+    padding: 20px;
+  }
+  .signup-card h2 {
+    font-size: 20px;
+  }
+}

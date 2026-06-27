@@ -11,7 +11,7 @@ function Team() {
         className="row p-3 text-muted"
         style={{ lineHeight: "1.8", fontSize: "1.2em" }}
       >
-        <div className="col-6 p-3 text-center">
+        <div className="col-12 col-md-6 p-3 text-center">
           <img
             src="hemanth.jpeg"
             style={{ borderRadius: "90%", width: "60%" }}
@@ -19,7 +19,7 @@ function Team() {
           <h4 className="mt-5">Hemanth .S</h4>
           <h6>Founder, CEO</h6>
         </div>
-        <div className="col-6 p-3">
+        <div className="col-12 col-md-6 p-3">
           <p>
             Nithin bootstrapped and founded Zerodha in 2010 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
