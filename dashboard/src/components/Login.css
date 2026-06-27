@@ -38,3 +38,13 @@
 .login-card .btn-primary:disabled {
   background: #7ab0e6;
 }
+
+@media (max-width: 576px) {
+  .login-card {
+    padding: 24px;
+    max-width: 90%;
+  }
+  .login-card h2 {
+    font-size: 20px;
+  }
+}
