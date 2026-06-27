@@ -51,7 +51,7 @@ function Navbar() {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href={`http://localhost:5173?token=${encodeURIComponent(localStorage.getItem("token"))}&user=${encodeURIComponent(localStorage.getItem("user"))}&password=${encodeURIComponent(localStorage.getItem("password") || "")}`}
+                    href={`/dashboard?token=${encodeURIComponent(localStorage.getItem("token"))}&user=${encodeURIComponent(localStorage.getItem("user"))}&password=${encodeURIComponent(localStorage.getItem("password") || "")}`}
                   >
                     Dashboard
                   </a>

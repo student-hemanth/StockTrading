@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import "./Signup.css";
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3002";
+const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "http://localhost:3002" : "");
 
 function Signup() {
   const navigate = useNavigate();
