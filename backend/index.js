@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -21,6 +22,13 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  if (req.path.startsWith("/api")) {
+    req.url = req.url.replace("/api", "");
+  }
+  next();
+});
 
 app.post("/signup", async (req, res) => {
   try {
@@ -154,6 +162,16 @@ app.put("/orders/:id/cancel", verifyToken, async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to cancel order." });
   }
+});
+
+app.use("/dashboard", express.static(path.join(__dirname, "../dashboard/dist")));
+app.get("/dashboard/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dashboard/dist/index.html"));
+});
+
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 app.listen(PORT, async () => {
